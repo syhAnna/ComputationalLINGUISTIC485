@@ -1,0 +1,23 @@
+% Name: Yuhan Shao, Login ID: shaoyuha, student ID: 1002281327
+
+ii. The student appeared to sleep.
+   Sleep
+       Experiencer: the student
+   appeared
+       Theme: the student
+
+
+iii. The student promised the teacher to sleep.
+     Sleep
+         Experiencer: the student
+     Promised
+         Agent: the student
+         Theme: the teacher
+         Beneficiary: the teacher
+
+iv. The student expected the teacher to sleep.
+    Sleep
+        Experiencer: the teacher
+    Expected
+        Agent: the student
+        Theme: the teacher

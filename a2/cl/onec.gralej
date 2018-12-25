@@ -1,0 +1,57 @@
+<'fido feeds the dog with biscuits'
+{ :'s_sg_rule:fido feeds the dog with biscuits'
+    s
+    { :'np_nprprule:fido'
+        np(
+            noun_head: n(
+                noun_num: sg,
+                prp: true))
+        { :'lexicon:fido'
+            n(
+                noun_num: sg,
+                prp: true)
+        }
+    }
+    { :'vp_sg_or_plrule:feeds the dog with biscuits'
+        vp(
+            verb_head: v(
+                verb_num: sg))
+        { :'lexicon:feeds'
+            v(
+                verb_num: sg)
+        }
+        { :'np_det_sg_n_pprule:the dog with biscuits'
+            np(
+                noun_head: n(
+                    noun_num: sg,
+                    prp: false))
+            { :'lexicon:the'
+                det
+            }
+            { :'lexicon:dog'
+                n(
+                    noun_num: sg,
+                    prp: false)
+            }
+            { :'pprule:with biscuits'
+                pp
+                { :'lexicon:with'
+                    p
+                }
+                { :'np_nrule:biscuits'
+                    np(
+                        noun_head: n(
+                            noun_num: pl,
+                            prp: nprp))
+                    { :'lexicon:biscuits'
+                        n(
+                            noun_num: pl,
+                            prp: false)
+                    }
+                }
+            }
+        }
+    }
+}
+>
+

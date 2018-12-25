@@ -1,0 +1,64 @@
+<'the student appeared to sleep'
+{ :'s_rule:the student appeared to sleep'
+    s(
+        gap: n_sem,
+        mood: indicative(
+            tense: tense),
+        vsem: 'mgsat(v_sem)')
+    { :'np_rule:the student'
+        np(
+            nsem: $3 = n_sem)
+        { :'lexicon:the'
+            det
+        }
+        { :'lexicon:student'
+            n(
+                nsem: student)
+        }
+    }
+    { :'vp_rule//2:appeared to sleep'
+        vp(
+            gap: $3,
+            mood: indicative(
+                tense: tense),
+            vsem: v_sem(
+                agent: n_sem_or_none,
+                ben: n_sem_or_none,
+                exp: n_sem_or_none,
+                gap_type: type,
+                theme: n_sem_or_none,
+                vform: past))
+        { :'lexicon:appeared'
+            v(
+                vsem: appear(
+                    agent: none,
+                    ben: none,
+                    exp: none,
+                    gap_type: none,
+                    theme: $3,
+                    vform: past))
+        }
+        { :'inf_torule:to sleep'
+            inf_clause(
+                gap: n_sem,
+                mood: infinitive,
+                rec: $3,
+                vsem: 'mgsat(v_sem)')
+            { :'lexicon:to'
+                toinf
+            }
+            { :'lexicon:sleep'
+                v(
+                    vsem: sleep(
+                        agent: none,
+                        ben: none,
+                        exp: $3,
+                        gap_type: none,
+                        theme: none,
+                        vform: present))
+            }
+        }
+    }
+}
+>
+
